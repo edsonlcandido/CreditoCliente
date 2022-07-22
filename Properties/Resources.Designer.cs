@@ -73,6 +73,26 @@ namespace CreditoCliente.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap circle_arrow_down_red16x16 {
+            get {
+                object obj = ResourceManager.GetObject("circle-arrow-down-red16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap circle_arrow_down_red32x32 {
+            get {
+                object obj = ResourceManager.GetObject("circle-arrow-down-red32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap circle_arrow_up_green16x16 {
             get {
                 object obj = ResourceManager.GetObject("circle-arrow-up-green16x16", resourceCulture);

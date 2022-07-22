@@ -34,8 +34,8 @@
             this.textBoxUsuarioId = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.buttonOK = new System.Windows.Forms.Button();
-            this.buttonFechar = new System.Windows.Forms.Button();
+            this.buttonEntrar = new System.Windows.Forms.Button();
+            this.buttonSair = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -91,27 +91,28 @@
             this.textBox1.Size = new System.Drawing.Size(325, 25);
             this.textBox1.TabIndex = 8;
             // 
-            // buttonOK
+            // buttonEntrar
             // 
-            this.buttonOK.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.buttonEntrar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonOK.Location = new System.Drawing.Point(311, 134);
-            this.buttonOK.Name = "buttonOK";
-            this.buttonOK.Size = new System.Drawing.Size(90, 30);
-            this.buttonOK.TabIndex = 10;
-            this.buttonOK.Text = "Entrar";
-            this.buttonOK.UseVisualStyleBackColor = true;
+            this.buttonEntrar.Location = new System.Drawing.Point(311, 134);
+            this.buttonEntrar.Name = "buttonEntrar";
+            this.buttonEntrar.Size = new System.Drawing.Size(90, 30);
+            this.buttonEntrar.TabIndex = 10;
+            this.buttonEntrar.Text = "Entrar";
+            this.buttonEntrar.UseVisualStyleBackColor = true;
+            this.buttonEntrar.Click += new System.EventHandler(this.buttonEntrar_Click);
             // 
-            // buttonFechar
+            // buttonSair
             // 
-            this.buttonFechar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.buttonSair.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonFechar.Location = new System.Drawing.Point(432, 134);
-            this.buttonFechar.Name = "buttonFechar";
-            this.buttonFechar.Size = new System.Drawing.Size(90, 30);
-            this.buttonFechar.TabIndex = 11;
-            this.buttonFechar.Text = "Sair";
-            this.buttonFechar.UseVisualStyleBackColor = true;
+            this.buttonSair.Location = new System.Drawing.Point(432, 134);
+            this.buttonSair.Name = "buttonSair";
+            this.buttonSair.Size = new System.Drawing.Size(90, 30);
+            this.buttonSair.TabIndex = 11;
+            this.buttonSair.Text = "Sair";
+            this.buttonSair.UseVisualStyleBackColor = true;
             // 
             // pictureBox2
             // 
@@ -127,10 +128,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.buttonSair;
             this.ClientSize = new System.Drawing.Size(534, 176);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.buttonOK);
-            this.Controls.Add(this.buttonFechar);
+            this.Controls.Add(this.buttonEntrar);
+            this.Controls.Add(this.buttonSair);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox1);
@@ -159,8 +161,8 @@
         private System.Windows.Forms.TextBox textBoxUsuarioId;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button buttonOK;
-        private System.Windows.Forms.Button buttonFechar;
+        private System.Windows.Forms.Button buttonEntrar;
+        private System.Windows.Forms.Button buttonSair;
         private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

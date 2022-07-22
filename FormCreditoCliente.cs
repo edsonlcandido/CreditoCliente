@@ -21,8 +21,12 @@ namespace CreditoCliente
 
         private void buttonCloseCreditoCliente_Click(object sender, System.EventArgs e)
         {
-            Form formCreditoClienteDetalhes = this.ActiveMdiChild;
-            formCreditoClienteDetalhes.Close();
+            if (this.MdiChildren.Length>0)
+            {
+                Form formCreditoClienteDetalhes = this.ActiveMdiChild;
+                formCreditoClienteDetalhes.Close();
+            }
+            
         }
     }
 }

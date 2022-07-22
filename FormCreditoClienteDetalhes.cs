@@ -8,5 +8,11 @@ namespace CreditoCliente
         {
             InitializeComponent();
         }
+
+        private void buttonIncluir_Click(object sender, System.EventArgs e)
+        {
+            FormIncluirCredito formIncluirCredito = new FormIncluirCredito();
+            formIncluirCredito.ShowDialog();
+        }
     }
 }

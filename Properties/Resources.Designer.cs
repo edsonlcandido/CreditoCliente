@@ -83,6 +83,16 @@ namespace CreditoCliente.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap coins128x128 {
+            get {
+                object obj = ResourceManager.GetObject("coins128x128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap folder_open16x16 {
             get {
                 object obj = ResourceManager.GetObject("folder-open16x16", resourceCulture);

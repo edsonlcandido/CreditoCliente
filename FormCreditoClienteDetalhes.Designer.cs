@@ -31,7 +31,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.buttonTransferir = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.buttonExcluir = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -58,7 +58,7 @@
             // 
             this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.buttonTransferir);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.buttonExcluir);
             this.panel1.Controls.Add(this.button2);
@@ -87,14 +87,15 @@
             this.button6.Text = "Origem";
             this.button6.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // buttonTransferir
             // 
-            this.button5.Location = new System.Drawing.Point(628, 20);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(140, 30);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Transferir";
-            this.button5.UseVisualStyleBackColor = true;
+            this.buttonTransferir.Location = new System.Drawing.Point(628, 20);
+            this.buttonTransferir.Name = "buttonTransferir";
+            this.buttonTransferir.Size = new System.Drawing.Size(140, 30);
+            this.buttonTransferir.TabIndex = 4;
+            this.buttonTransferir.Text = "Transferir";
+            this.buttonTransferir.UseVisualStyleBackColor = true;
+            this.buttonTransferir.Click += new System.EventHandler(this.buttonTransferir_Click);
             // 
             // button4
             // 
@@ -284,7 +285,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button buttonTransferir;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button buttonExcluir;
         private System.Windows.Forms.Button button2;

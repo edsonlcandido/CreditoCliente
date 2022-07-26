@@ -19,5 +19,16 @@ namespace CreditoCliente
         {
             this.Close();
         }
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+            toolStripStatusLabelVersao.Text = Application.ProductVersion.ToString();
+        }
+
+        private void cadastrosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form formCreditoCliente = new FormCreditoCliente();
+            formCreditoCliente.ShowDialog();
+        }
     }
 }

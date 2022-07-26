@@ -38,8 +38,8 @@
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabelDivider1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabelServidor = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabelDivider1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabelBase = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
@@ -83,6 +83,7 @@
             this.cadastrosToolStripMenuItem.Name = "cadastrosToolStripMenuItem";
             this.cadastrosToolStripMenuItem.Size = new System.Drawing.Size(79, 21);
             this.cadastrosToolStripMenuItem.Text = "Cadastros";
+            this.cadastrosToolStripMenuItem.Click += new System.EventHandler(this.cadastrosToolStripMenuItem_Click);
             // 
             // manutençãoToolStripMenuItem
             // 
@@ -156,18 +157,18 @@
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(53, 17);
             this.toolStripStatusLabel1.Text = "Servidor:";
             // 
-            // toolStripStatusLabelDivider1
-            // 
-            this.toolStripStatusLabelDivider1.Name = "toolStripStatusLabelDivider1";
-            this.toolStripStatusLabelDivider1.Size = new System.Drawing.Size(10, 17);
-            this.toolStripStatusLabelDivider1.Text = "|";
-            // 
             // toolStripStatusLabelServidor
             // 
             this.toolStripStatusLabelServidor.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.toolStripStatusLabelServidor.Name = "toolStripStatusLabelServidor";
             this.toolStripStatusLabelServidor.Size = new System.Drawing.Size(58, 17);
             this.toolStripStatusLabelServidor.Text = "127.0.0.1";
+            // 
+            // toolStripStatusLabelDivider1
+            // 
+            this.toolStripStatusLabelDivider1.Name = "toolStripStatusLabelDivider1";
+            this.toolStripStatusLabelDivider1.Size = new System.Drawing.Size(10, 17);
+            this.toolStripStatusLabelDivider1.Text = "|";
             // 
             // toolStripStatusLabel2
             // 
@@ -288,6 +289,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormMain";
             this.Text = "ERP";
+            this.Load += new System.EventHandler(this.FormMain_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);

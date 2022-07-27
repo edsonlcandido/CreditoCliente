@@ -26,5 +26,11 @@ namespace CreditoCliente
             Form formTransferir = new FormTransferir();
             formTransferir.ShowDialog();
         }
+
+        private void button7_Click(object sender, System.EventArgs e)
+        {
+            Form formOBS_CreditoCliente = new FormOBS_CreditoCliente();
+            formOBS_CreditoCliente.ShowDialog();
+        }
     }
 }

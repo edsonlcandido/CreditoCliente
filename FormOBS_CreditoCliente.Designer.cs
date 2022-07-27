@@ -68,7 +68,7 @@
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(510, 100);
-            this.groupBox1.TabIndex = 5;
+            this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cabeçalho";
             // 
@@ -130,7 +130,7 @@
             this.groupBox2.Location = new System.Drawing.Point(12, 118);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(510, 93);
-            this.groupBox2.TabIndex = 6;
+            this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Histórico";
             // 
@@ -207,7 +207,7 @@
             this.buttonOK.Location = new System.Drawing.Point(162, 415);
             this.buttonOK.Name = "buttonOK";
             this.buttonOK.Size = new System.Drawing.Size(90, 34);
-            this.buttonOK.TabIndex = 9;
+            this.buttonOK.TabIndex = 3;
             this.buttonOK.Text = "Ok";
             this.buttonOK.UseVisualStyleBackColor = true;
             // 
@@ -218,9 +218,10 @@
             this.buttonFechar.Location = new System.Drawing.Point(283, 415);
             this.buttonFechar.Name = "buttonFechar";
             this.buttonFechar.Size = new System.Drawing.Size(90, 34);
-            this.buttonFechar.TabIndex = 10;
+            this.buttonFechar.TabIndex = 4;
             this.buttonFechar.Text = "Fechar";
             this.buttonFechar.UseVisualStyleBackColor = true;
+            this.buttonFechar.Click += new System.EventHandler(this.buttonFechar_Click);
             // 
             // groupBox3
             // 
@@ -228,7 +229,7 @@
             this.groupBox3.Location = new System.Drawing.Point(12, 217);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(504, 192);
-            this.groupBox3.TabIndex = 11;
+            this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Observação";
             // 
@@ -243,8 +244,10 @@
             // 
             // FormOBS_CreditoCliente
             // 
+            this.AcceptButton = this.buttonOK;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.buttonFechar;
             this.ClientSize = new System.Drawing.Size(534, 461);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.buttonOK);

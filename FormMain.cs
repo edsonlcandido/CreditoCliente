@@ -22,7 +22,7 @@ namespace CreditoCliente
 
         private void FormMain_Load(object sender, EventArgs e)
         {
-            toolStripStatusLabelVersao.Text = Application.ProductVersion.ToString();
+            toolStripStatusLabelVersao.Text = "0.9.0";
         }
 
         private void cadastrosToolStripMenuItem_Click(object sender, EventArgs e)
